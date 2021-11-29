@@ -1,4 +1,4 @@
-Para usar:<br> 
+<h2>Para usar:</h2><br> 
 1.- Crear la base de datos del archivo "BD.sql" en MySQL (yo la hice en la versión 5.7 de MySQL Command Line Client), dentro de la carpeta "basededatos" en el inicio.<br>
 2.- Ir al archivo "configbd.js" dentro de la carpeta "src".<br>
 3.- Modificar el puerto en donde dice "port: '3307'" al puerto que tengas tú en MySQL (suele ser el 3306).<br>
