@@ -1,0 +1,15 @@
+<section class="contenedorPrincipal contenedorNota">
+    <form action="/notas/editarnota/{{notita.id}}" method="POST">
+        <h2 class="txt-grande titulo">Editar nota</h2>
+        <br>
+        <input type="text" value="{{notita.title}}" name="title" placeholder="Introducir título" autofocus class="input-nota">
+        <br><hr>
+        <textarea name="nota" rows="5" placeholder="Introducir nota" class="input-nota txta-nota">
+            {{notita.nota}}
+        </textarea>
+        <br><hr><br>
+        <button class="btn">
+            Guardar
+        </button>
+    </form>
+</section>

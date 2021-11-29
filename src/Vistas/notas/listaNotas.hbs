@@ -1,0 +1,29 @@
+{{#each notitas}}
+<div class="contenedorPrincipal contenedorNota">
+    <div class="nota">
+        <form>
+            <h4 class="txt-grande titulo-nota">
+                {{title}}
+            </h4>
+            <hr>
+            <textarea rows="4" class="input-nota txt-area" readonly>{{nota}}</textarea>
+            <br><hr>
+            <div class="tiempo">
+                Creada: {{timeago created_at}}
+            </div>
+            <hr><br>
+            <a href="/notas/borrarnota/{{id}}" class="btn tmn">Borrar nota</a>
+            <br><br>
+            <a href="/notas/editarnota/{{id}}" class="btn tmn">Editar nota</a>
+        </form>
+    </div>
+{{else}}
+</div>
+
+<section class="contenedorPrincipal contenedorNota">
+    <h4 class="titulo">No hay notas guardadas
+    <br><br>
+    <a href="/notas/crearnota" class="btn">Crear nota</a>
+    </h4>
+</section>
+{{/each}}
